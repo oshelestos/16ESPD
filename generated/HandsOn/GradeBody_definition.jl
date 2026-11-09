@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    GradeBody(; name, m, CdA, rho, f_r, g, v_nominal, __overrides)
 
+
 The body of step 4 on a road with a gradient: one `grade` signal tilts the rolling resistance and
 drives the grade force.
 

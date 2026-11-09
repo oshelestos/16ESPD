@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TorqueSplit(; name, ratio, v_fade, __overrides)
 
+
 Splits the driver's signed torque demand between the machine and the front friction brakes.
 
     fade      = clamp(v / v_fade, 0, 1)

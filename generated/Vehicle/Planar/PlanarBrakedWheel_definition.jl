@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarBrakedWheel(; name, radius, J, mu_A, mu_S, mu_scale, sAdhesion, sSlide, vAdhesion_min, vSlide_min, T_brake, tau_max, w0, __overrides)
 
+
 Planar road wheel combining tire contact, spin inertia, and an in-line brake.
 
 All plant interfaces are physical except the brake actuator command. Normal load enters through

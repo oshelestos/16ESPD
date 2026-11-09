@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ABSStopWheelOnly(; name, road_mu, a_ref, pedal, __overrides)
 
+
 Hands-on 03 step 04 hydraulic ABS bench using only a wheel-speed sensor. `RefSpeedEstimator`
 provides estimated slip, vehicle speed, and wheel acceleration to the three-phase controller.
 

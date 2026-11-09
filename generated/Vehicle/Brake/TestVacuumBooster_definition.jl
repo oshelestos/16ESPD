@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestVacuumBooster(; name, F_peak, t0, t_up, t_hold, t_down, p_vac, F_app, F_rel, __overrides)
 
+
 Brake plan increment 2b: the vacuum booster at a constant vacuum source, pushing a master cylinder
 into both axles' calipers with the wheels held still.
 

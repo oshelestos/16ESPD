@@ -181,6 +181,7 @@ export BoostChopperTransient__System
   var"f_s"::Float64 = 20000.0
   # Inductance
   var"L"::Float64 = 0.0001
+  # 
   # Resistively loaded 48 V boost at constant duty, with external 20 uF output
   # capacitance. Starts from zero stored energy; 6 ms covers settling and
   # whole-period steady-state checks. A 1 us maximum step resolves the PWM.

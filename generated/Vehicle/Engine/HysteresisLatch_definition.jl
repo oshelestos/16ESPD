@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    HysteresisLatch(; name, latch_time, __overrides)
 
+
 Continuous set/reset latch.
 
 The state relaxes toward the selected Boolean request rather than changing discontinuously. Its

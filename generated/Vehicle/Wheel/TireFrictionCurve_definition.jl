@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TireFrictionCurve(; name, sAdhesion, sSlide, mu_A, mu_S, __overrides)
 
+
 Tire friction characteristic: the friction coefficient as a function of longitudinal slip.
 
 Triple-S shape, point-symmetric about zero slip. `mu` rises from zero to the adhesion peak `mu_A`

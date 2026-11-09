@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ElectricDrive(; name, ratio, P_aux, SoC0, __overrides)
 
+
 The battery-electric drive of a Leaf-class car: battery, average converter and DC-equivalent
 machine, the 12 V auxiliaries on the DC link, and the single-speed reduction to the shaft that
 drives the differential.

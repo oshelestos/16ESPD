@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    GradeProfile(; name, gradient, start_time, duration, __overrides)
 
+
 Road-grade scenario: flat, climb, then flat again.
 
 The climb starts at `start_time` and lasts for `duration`. The default infinite duration retains

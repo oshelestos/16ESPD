@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    StaticBooster(; name, SR, F_cut, F_jump, A_d, p_vac, F_rs0, p_atm, __overrides)
 
+
 Static vacuum booster with physical translational input, output, and housing connectors.
 
 The pushrod is treated as rigid, while the housing carries the force added by vacuum assist. The

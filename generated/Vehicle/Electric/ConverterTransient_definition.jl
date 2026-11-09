@@ -175,6 +175,7 @@ export ConverterTransient__System
   var"rpm_start"::Float64 = 0.0
   # Dyno speed after the ramp [rpm]
   var"rpm_end"::Float64 = 10000.0
+  # 
   # Envelope bench for the library `Converter` driving the library `DCMachine` with its field
   # input: a stiff supply of `V` feeds the converter, the converter is asked for `I_ref`, and the
   # dyno holds the shaft at `rpm_start` for 1 s, ramps it to `rpm_end` over 100 s and holds it there

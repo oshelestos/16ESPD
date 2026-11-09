@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    VacuumPedalStop(; name, pedal, road_mu, u_thr, engine_on, omega_e, n_apply, ev_pump, p_vac0, x_full, __overrides)
 
+
 Lecture 3 demo bench: hands-on 03's `PedalStop` with the vacuum booster in place of the static
 one, drawing on the engine's air path at a prescribed throttle and engine speed, or on an
 electric vacuum pump.

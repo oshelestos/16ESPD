@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SlipWheel1D(; name, radius, F_z, sAdhesion, sSlide, mu_A, mu_S, v_eps, __overrides)
 
+
 One-dimensional tire contact with longitudinal slip-dependent friction.
 
 Positive shaft rotation drives positive vehicle motion. The friction law is the `curve`

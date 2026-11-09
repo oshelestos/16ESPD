@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BEVWLTC(; name, m, radius, k, Ti, tau_max, v_fade, P_aux, ratio, dv_wheel, __overrides)
 
+
 Hands-on 04 step 04 bench: your drive turns the planar car's front wheels through the planar
 differential, and a PI driver follows WLTC. The driver asks for a machine torque, and the
 course library's `TorqueSplit` hands it on. Driving, the machine gives it; braking, the machine

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SlipCar(; name, theta_e, T_max, i, J_w, r, m, CdA, g, __overrides)
 
+
 The car with a slipping wheel and a road gradient. Body speed and wheel surface speed are both
 reported in km/h, so wheelspin shows as the gap between them.
 

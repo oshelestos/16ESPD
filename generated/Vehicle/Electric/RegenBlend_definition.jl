@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    RegenBlend(; name, abs_rule, ratio, radius, tau_max, P_charge, v_fade, withdraw, T_withdraw, T_return, __overrides)
 
+
 Series regenerative braking: the driver's brake demand goes to the machine first, up to the
 smallest of three limits, and the remainder goes to the four friction brakes. With
 `abs_rule = true` a fourth rule withdraws regen while the ABS acts on a wheel the machine drives.

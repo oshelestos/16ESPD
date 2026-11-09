@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    EngineGenerator(; name, T_max, P_rated, w_base, V_nom, size_scale, R, L, J, T_f, K_i, k_w, C, w_reg, d_max, T_i, V_on, f_s, t_sw, eps, T_P, dw_unload, T_aw_P, w_min, K_N, T_N, T_aw, clamp_width, pedal_start, p_m_start, __overrides)
 
+
 Engine-generator: Lecture 2's mapped engine and a Lecture 4 DC-equivalent machine running as a
 generator on one shaft, with the converter that delivers its power to a DC bus at `p` and `n`.
 

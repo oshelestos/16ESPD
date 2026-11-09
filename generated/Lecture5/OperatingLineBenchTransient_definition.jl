@@ -157,6 +157,7 @@ export OperatingLineBenchTransient__System
   var"log_file"::String = ""
   # Dyno wheel-side speed [rpm] (assumed)
   var"wheel_rpm"::Float64 = 450.0
+  # 
   # CVT holding an engine on its best-BSFC line, on a dyno at fixed wheel speed (assumed bench).
   # 
   # The requested power ramps from 1 kW to a 32 kW hold, then past peak power. The operating line

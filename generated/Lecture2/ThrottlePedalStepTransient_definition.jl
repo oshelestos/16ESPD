@@ -223,6 +223,7 @@ export ThrottlePedalStepTransient__System
   var"R_wiper1"::Float64 = 10.0
   # Width over which the spring preload changes sign at limp home
   var"eps_lh"::Float64 = 0.0035
+  # 
   # The electronic throttle answering the driver's pedal: a step opening, a hold, then a ramp back.
   # 
   # The ECU commands the opening `u_cmd`: it starts at limp home, steps to `u_step` at `t_step`, and

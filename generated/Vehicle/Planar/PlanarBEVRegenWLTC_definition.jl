@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarBEVRegenWLTC(; name, m, radius, k, Ti, tau_max, P_charge, v_fade, P_aux, ratio, dv_wheel, __overrides)
 
+
 `PlanarBEVWLTC` with series regenerative braking: `Vehicle.Electric.RegenBlend` takes the place
 of `TorqueSplit`, and the share of a braking demand the machine does not take goes to all four
 friction brakes in equal parts, as Lecture 3's brake demand does.

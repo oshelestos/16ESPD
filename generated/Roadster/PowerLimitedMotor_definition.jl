@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PowerLimitedMotor(; name, T_max, P_max, w_eps, __overrides)
 
+
 Electric drive referred to the driven wheels: it delivers the commanded torque up to a torque
 ceiling, and above base speed no more than its rated power allows.
 

@@ -151,6 +151,7 @@ export WideOpenThrottleTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Open-loop wide-open-throttle run: full torque from rest on flat road.
   # 
   # A `Car` cannot be a `TransientAnalysis` model on its own because its `tau_cmd` input would be

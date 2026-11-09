@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    EngineGeneratorBench(; name, V_bus, P_1, P_2, P_3, P_4, R_load, C_link, t_hold, t_ramp, __overrides)
 
+
 Engine-generator into a resistive DC load, stepped along the best-BSFC line (assumed bench).
 
 The electrical power command climbs 10, 20, 30 and 50 kW, each held for `t_hold` with a

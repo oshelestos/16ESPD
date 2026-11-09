@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestBuckChopper(; name, V_in, d, R_load, f_s, L, __overrides)
 
+
 Bench for the library `BuckChopper`, the circuit of deck 7 slide 28: a stiff `V_in` supply, the
 chopper at a fixed duty `d`, and a resistive load. The inductor starts without current, so the
 run shows the current climbing into its periodic steady state with `L / R` = 0.14 ms (defaults),

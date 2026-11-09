@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ElectricVacuumPump(; name, Q, p_min, p_on, p_off, V_h, T_latch, T, R, p_init, __overrides)
 
+
 Electric vane vacuum pump with its suction hose, for a booster with no manifold vacuum: a diesel,
 an unthrottled petrol engine, a hybrid or an EV.
 
@@ -38,11 +39,12 @@ at least 86 % vacuum. The switch points are the aftermarket 18 and 25 inHg of va
 
 ## Connectors
 
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `p_sense` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
  * `running` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
 

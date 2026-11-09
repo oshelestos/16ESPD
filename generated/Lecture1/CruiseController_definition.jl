@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CruiseController(; name, with_I, with_D, k, Ti, Td, y_max, y_min, wd, Nd, xi0, xd0, __overrides)
 
+
 PID cruise controller with output limiting and clamping anti-windup.
 
 The proportional branch acts on the control error, the integral branch supplies steady-state

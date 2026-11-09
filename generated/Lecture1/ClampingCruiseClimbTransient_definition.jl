@@ -211,6 +211,7 @@ export ClampingCruiseClimbTransient__System
   var"gradient"::Float64 = 0.1
   var"start_time"::Float64 = 30.0
   var"duration"::Float64 = 120.0
+  # 
   # The clamping counterpart of `CruiseClimb`: same scenario, closed with `CruiseLoop`.
   # 
   # Signal paths match `CruiseClimb` — `loop.plant.v_kmh`, `loop.controller.y`,

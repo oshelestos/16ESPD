@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    NoisyCruiseLoop(; name, theta_e, with_I, with_D, k, Ti, Td, Nd, T_max, y_max, y_min, wd, m, CdA, amplitude, m0, xi0, xd0, __overrides)
 
+
 Cruise-control loop with deterministic noise in the speed-measurement path.
 
 The plant speed remains available as `plant.v_kmh`, while `noise.y` is the measurement seen by

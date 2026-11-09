@@ -157,6 +157,7 @@ export BatteryDischargeTransient__System
   var"log_file"::String = ""
   # Current drawn from the battery once the load is on; negative charges it
   var"I_load"::Float64 = 100.0
+  # 
   # Hands-on 04 step 03 bench: the battery on a constant-current load, open circuit for 60 s and
   # then `I_load` for 30 minutes. At 100 A the terminal voltage sags from 350 V to 340 V and SoC
   # falls from 0.9 to 0.4625.

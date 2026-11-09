@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    GradeCar(; name, theta_e, T_max, m, CdA, __overrides)
 
+
 Longitudinal car on a graded road: torque command and road grade in, speed in km/h out.
 
 ## Parameters:

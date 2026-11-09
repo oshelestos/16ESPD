@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BoostChopper(; name, f_s, t_sw, R_on, R_off, L, R_L, __overrides)
 
+
 Switched step-up (boost) chopper: supply -> inductor -> winding -> switch node;
 the Switch shunts that node to n and the diode conducts from it to p_out. Uses
 the same PWM, Switch (including 1 nF output capacitance) and MSL exponential

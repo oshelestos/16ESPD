@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CutFuelMap(; name, rpm_axis, kpa_axis, torque_data, fuel_data, lambda_data, hc_data, co_data, nox_data, curve_axis, full_load_rpm, full_load_data, closed_rpm, closed_data, __overrides)
 
+
 Fuel mass flow read at speed and manifold pressure, gated by a fuel-cut fraction.
 
 `FuelMap` with a `cut` input from below: at 0 it passes the map through, at 1 it injects nothing.

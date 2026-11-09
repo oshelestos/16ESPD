@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CruiseLoop(; name, theta_e, with_I, with_D, k, Ti, Td, Nd, T_max, y_max, y_min, wd, m, CdA, m0, xi0, xd0, __overrides)
 
+
 Cruise-control loop around the students' car and controller.
 
 The setpoint and feedback signal are both in km/h, so `k` is interpreted as N.m per km/h.

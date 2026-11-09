@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Step2OperatingLineWLTC(; name, m, radius, k, Ti, tau_max, dv_wheel, engage_rpm, engage_width_rpm, tau_brake, brake_gain, lock_rpm, lock_width_rpm, P_peak, N_locked, __overrides)
 
+
 Hands-on 05 step 2 starter: the operating-line fixture without its line, with the powertrain still
 pedal-commanded. Placing OperatingLine as `line`, wiring the zero command to the two ignored
 inputs, setting `speed_commanded = true` and adding the three line equations the guide lists

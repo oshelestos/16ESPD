@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestSoCCorrectedFuelBattery(; name, mdot, v_car, I_amp, f, __overrides)
 
+
 A real `Vehicle.Electric.Battery` (Leaf defaults, R0 = 0.1 Ohm) driven by a current source
 through whole periods of a sine, so its charge, and SoC, return to the start while `R0 i^2` is
 burned throughout. The battery's `E i` feeds `SoCCorrectedFuel` beside a constant fuel flow and

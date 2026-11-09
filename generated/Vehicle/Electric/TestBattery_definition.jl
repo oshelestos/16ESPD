@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestBattery(; name, I_load, R0, __overrides)
 
+
 Constant-current discharge of the library `Battery`: open circuit for 60 s, then `I_load` drawn
 for 30 minutes. With the Leaf defaults and 100 A the terminal voltage drops from 350 V to 340 V
 when the load comes on, and SoC falls from 0.9 by 100 A x 1800 s / Q_nom = 0.4375 to 0.4625. A

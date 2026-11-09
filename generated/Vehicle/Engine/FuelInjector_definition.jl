@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FuelInjector(; name, R, L_inf, L_0, g_0, g_res, lift_max, m, c_spring, F_pre, c_stop, d_stop, d_seat, C_d, rho_f, q_static, dp_rated, __overrides)
 
+
 A port fuel injector: solenoid, needle and spray orifice, from the electrical terminals to the
 fuel mass flow.
 

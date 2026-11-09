@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TireFrictionCurve(; name, sAdhesion, sSlide, mu_A, mu_S, __overrides)
 
+
 Tire friction coefficient against longitudinal slip: rises to the adhesion peak `mu_A` at
 `sAdhesion`, falls to the sliding level `mu_S` at `sSlide`, and stays there. Point-symmetric, so
 braking slip gives negative friction.

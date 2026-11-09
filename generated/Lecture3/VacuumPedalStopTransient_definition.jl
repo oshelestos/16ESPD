@@ -191,6 +191,7 @@ export VacuumPedalStopTransient__System
   var"n_apply"::Float64 = 0.0
   var"ev_pump"::Float64 = 0.0
   var"p_vac0"::Float64 = 33000.0
+  # 
   # Lecture 3 demo bench: hands-on 03's `PedalStop` with the vacuum booster in place of the static
   # one, drawing on the engine's air path at a prescribed throttle and engine speed, or on an
   # electric vacuum pump.

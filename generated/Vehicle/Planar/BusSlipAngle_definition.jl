@@ -11,8 +11,9 @@ The four wheel slip angles from the car's bus, as plain signals.
 
 ## Connectors
 
- * `bus` - The receiving end of `CarBus`: the same signals, as inputs. A control unit or an unpack block
-(`BusMotion`, `BusSlip`, `BusSlipAngle`, `BusWheelSpeed`) listens on one of these. ([`CarBusIn`](@ref))
+ * `bus` - 
+The receiving end of `CarBus`: the same signals, as inputs. A control unit or an unpack block
+(`BusMotion`, `BusSlip`, `BusSlipAngle`, `BusWheelSpeed`) listens on one of these. ([`CarBusIn`](@ref))
  * `alpha_fl` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
  * `alpha_fr` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
  * `alpha_rl` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))

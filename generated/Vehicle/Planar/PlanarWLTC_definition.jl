@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarWLTC(; name, cycle, m, radius, k, Ti, tau_max, v_set, v0, dv_wheel, __overrides)
 
+
 Planar car on WLTC in a straight line: road load through `PlanarRoadLoad` and a PI driver on
 the front axle.
 

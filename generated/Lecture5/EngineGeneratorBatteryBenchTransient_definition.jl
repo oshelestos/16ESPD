@@ -151,6 +151,7 @@ export EngineGeneratorBatteryBenchTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Engine-generator charging a 270 V battery, stepped along the best-BSFC line and past the
   # engine's full load (assumed bench).
   # 

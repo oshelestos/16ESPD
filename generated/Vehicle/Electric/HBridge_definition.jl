@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    HBridge(; name, f_s, t_sw, R_on, R_off, C_oss, u_band, __overrides)
 
+
 Single-phase H-bridge inverter, switched: deck 7 slides 30 and 31. Four `Switch`es, each with a
 freewheeling diode across it, connect the outputs `a` and `b` to either rail of the DC link.
 

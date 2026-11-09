@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    IdealEngine(; name, theta_e, tau_e, T_max, __overrides)
 
+
 Torque command in, shaft torque out, through the two lags that make the plant FOPTD.
 
 The transport delay and the first-order lag are load-bearing, not decoration. Without

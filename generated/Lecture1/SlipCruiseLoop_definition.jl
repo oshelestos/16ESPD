@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SlipCruiseLoop(; name, theta_e, with_I, with_D, k, Ti, Td, Nd, T_max, y_max, y_min, wd, m, CdA, m0, xi0, xd0, __overrides)
 
+
 Cruise-control loop around the slip-capable car plant.
 
 The controller retains the existing km/h convention and tuning interface. Road friction is an

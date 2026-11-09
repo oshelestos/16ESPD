@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ToRPM(; name, __overrides)
 
+
 Signal-level unit conversion: rad/s to revolutions per minute.
 
 Same rationale as `ToKmPerHour`: the equation `y = (60 / (2*pi)) * u` is clearer standing on

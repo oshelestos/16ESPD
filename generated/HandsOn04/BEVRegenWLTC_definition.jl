@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BEVRegenWLTC(; name, m, radius, k, Ti, tau_max, P_charge, v_fade, P_aux, ratio, dv_wheel, __overrides)
 
+
 Hands-on 04 step 05 WLTC bench: step 04's car with your `RegenBlend` in place of `TorqueSplit`.
 The machine brakes first, within its limits; what it leaves goes to all four friction brakes. The
 meters give the recovered share: `E_dc_in`, charged back into the battery terminals, per

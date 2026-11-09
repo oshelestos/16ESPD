@@ -161,6 +161,7 @@ export TractionDrivePackDynoTransient__System
   var"log_file"::String = ""
   var"R0_bus"::Float64 = 0.33
   var"Q_bus"::Float64 = 1400.0 * 3600.0 / 270.0
+  # 
   # Traction-drive envelope bench (assumed; Lecture 4 dyno method). `Vehicle.Electric.TractionDrive`
   # on a battery bus at `HybridDrive`'s 270 V. With the defaults, 1 mOhm and 100 kWh, the bus is
   # stiff and the envelope is the drive's own; `TractionDrivePackDynoTransient` runs it on the

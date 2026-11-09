@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ToPercent(; name, __overrides)
 
+
 Signal-level unit conversion: fraction to percent.
 
 Same rationale as `ToKmPerHour`: `y = 100 * u` reads as a percentage conversion where a bare

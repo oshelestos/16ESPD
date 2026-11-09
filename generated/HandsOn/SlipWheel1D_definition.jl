@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SlipWheel1D(; name, radius, F_z, v_eps, __overrides)
 
+
 A road wheel whose tire grips through slip: the shaft and the body move at different speeds, and
 the friction curve turns the difference into traction.
 

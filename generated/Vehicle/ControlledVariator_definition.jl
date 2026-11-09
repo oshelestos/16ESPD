@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ControlledVariator(; name, i_launch, i_overdrive, target_rpm_min, target_rpm_max, ratio_time, output_rpm_floor, ratio_initial, __overrides)
 
+
 Ideal continuously variable transmission with a pedal-scheduled speed controller.
 
 The ratio is total engine-side to wheel-side speed reduction. The controller requests the ratio

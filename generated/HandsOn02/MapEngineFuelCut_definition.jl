@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MapEngineFuelCut(; name, __overrides)
 
+
 `MapEngine` after the hands-on 02 fuel-cut paste: deceleration fuel cut and a rev limiter.
 
 `cut_logic` cuts the fuel with the pedal closed above 1300 rpm, until the engine falls below
@@ -17,11 +18,12 @@ Students paste this into their own `MapEngine`; `MapEngine` stays the engine bef
 ## Connectors
 
  * `pedal` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `spline` - This connector represents a rotational spline with angle and torque as the potential and flow variables, respectively. ([`Spline`](@ref))
  * `support` - This connector represents a rotational spline with angle and torque as the potential and flow variables, respectively. ([`Spline`](@ref))
  * `p_m` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))

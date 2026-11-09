@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SeriesGroundElectric(; name, m, radius, k, Ti, tau_max, ratio, v_fade, dv_wheel, E_pack, Q_pack, R0_pack, SoC0, P_aux, __overrides)
 
+
 The ground driven electric-only through the WLTC Low phase: `Vehicle.Electric.TractionDrive` on
 a battery of `HybridDrive`'s pack defaults, 270 V, 1.4 kWh and 0.33 Ohm, with the 12 V
 auxiliaries on the same bus and no engine, so the meter's fuel input is zero. It checks that the

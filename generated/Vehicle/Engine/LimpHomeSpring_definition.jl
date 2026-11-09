@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    LimpHomeSpring(; name, phi_lh, T_pre, c, eps, __overrides)
 
+
 The return spring of an electronic throttle, with its limp-home position.
 
     tau = T_pre tanh((phi_rel - phi_lh) / eps) + c (phi_rel - phi_lh)

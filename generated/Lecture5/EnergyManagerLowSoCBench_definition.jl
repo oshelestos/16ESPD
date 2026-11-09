@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    EnergyManagerLowSoCBench(; name, file, P_data, dither_data, tau_data, v_data, T_dither, i_bench, radius, E_cap, eta, SoC0, __overrides)
 
+
 Energy manager with a depleted battery (assumed bench): the charge latch is set from the start.
 
 | time [s] | demand | rule |

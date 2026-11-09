@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MappedEngine(; name, rpm_axis, kpa_axis, torque_data, fuel_data, lambda_data, hc_data, co_data, nox_data, curve_axis, full_load_rpm, full_load_data, closed_rpm, closed_data, fuel_controlled, w_drag, pedal_exponent, throttle_time, J_e, pedal_closed, fuel_cut_rpm, fuel_resume_rpm, rev_cut_rpm, rev_resume_rpm, latch_time, co2_per_fuel, __overrides)
 
+
 Map-based petrol engine assembled as a visible pedal-to-torque signal chain.
 
 The maps are generated from `scripts/alpha_engine_maps.jl`. Small blocks keep engineering-unit
@@ -48,11 +49,12 @@ maps are `CutMap`s, because the fuel cut has to gate them.
 
  * `pedal` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
  * `fuel_enable` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `spline` - This connector represents a rotational spline with angle and torque as the potential and flow variables, respectively. ([`Spline`](@ref))
  * `support` - This connector represents a rotational spline with angle and torque as the potential and flow variables, respectively. ([`Spline`](@ref))
  * `p_m` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))

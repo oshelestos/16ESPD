@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FieldEMF(; name, k, __overrides)
 
+
 Hands-on 04 step 02: the standard library's `RotationalEMF` with its flux as an input. `k` is
 KΦ at full flux; `field` is Φ as a fraction of full.
 

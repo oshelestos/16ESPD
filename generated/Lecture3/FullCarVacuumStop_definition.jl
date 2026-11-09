@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FullCarVacuumStop(; name, pedal, road_mu, brake_time, speed_kmh, pedal_cmd, rpm0, p_m0, p_vac0, __overrides)
 
+
 Lecture 3 whole-car vacuum stop: the Hands-on 02 map engine with fuel cut, its flywheel and the
 CVT (centrifugal clutch and pedal-scheduled variator) drive the hydraulic braked wheel, and build
 02's brake chain, with `Vehicle.Brake.VacuumBooster` in place of the static booster, stops it.

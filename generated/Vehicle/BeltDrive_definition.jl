@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BeltDrive(; name, ratio, eta, P_reg, __overrides)
 
+
 Rigid, bidirectional fixed-ratio belt for a crank-coupled machine.
 `ratio = w_a / w_b` relative to the housing; a is the machine, b the crank.
 Spline torques enter the component. For P_a >= 0, tau_b = -ratio*eta*tau_a;

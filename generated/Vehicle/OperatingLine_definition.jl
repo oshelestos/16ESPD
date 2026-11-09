@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    OperatingLine(; name, file, dataset, __overrides)
 
+
 Engine speed on the best-BSFC line for a requested engine power.
 
 The table is the Lecture 2 map's best-BSFC line (scripts/bsfc_line.jl): for each power, the

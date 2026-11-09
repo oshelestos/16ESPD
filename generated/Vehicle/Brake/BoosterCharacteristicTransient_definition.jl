@@ -171,6 +171,7 @@ export BoosterCharacteristicTransient__System
   var"p_vac"::Float64 = 33000.0
   var"F_app"::Float64 = 10.0
   var"F_rel"::Float64 = 10.0
+  # 
   # Brake plan increment 2b: the vacuum booster at a constant vacuum source, pushing a master cylinder
   # into both axles' calipers with the wheels held still.
   # 

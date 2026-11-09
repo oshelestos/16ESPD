@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarBEVDrive(; name, esp_on, abs_on, mu, T_actuator, m, radius, T_full, tau_max, P_charge, v_fade, P_aux, ratio, dv_wheel, __overrides)
 
+
 Planar battery-electric car with causal driver inputs and first-order actuator response.
 Regen withdraws while the ECU acts on either front brake, returning the demand to friction
 under ABS control.

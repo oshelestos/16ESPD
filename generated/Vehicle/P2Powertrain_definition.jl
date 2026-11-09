@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    P2Powertrain(; name, speed_commanded, start_stop, engine_stopped, firing_rpm, firing_width, position_start, engine_speed_start, __overrides)
 
+
 P2 transmission-input hybrid with a pedal- or speed-commanded total CVT ratio.
 MappedEngine drives K0 and the HybridDrive shaft. Connect the housing support to ground.
 `engine_stopped` holds the engine with fuel cut for fixed electric-only tests.

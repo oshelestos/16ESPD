@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    DCMachine(; name, field_weakening, T_max, w_base, V_nom, R, L, J, T_f, K_i, k_w, C, w_reg, tau_loss_base, k, __overrides)
 
+
 DC-equivalent traction machine: a back-EMF element behind armature resistance and inductance,
 with the deck's speed-dependent losses as parts on the shaft.
 

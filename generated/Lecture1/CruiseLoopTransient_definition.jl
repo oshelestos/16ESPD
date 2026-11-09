@@ -234,6 +234,7 @@ export CruiseLoopTransient__System
   var"v0"::Float64 = 25.0
   var"tau0"::Float64 = 31.078
   var"t_step"::Float64 = 0.0
+  # 
   # Flat-road 90 to 110 km/h setpoint-step scenario for `CruiseLoop`.
   # 
   # The engine lag is preloaded with the torque holding the initial speed. The step occurs at the

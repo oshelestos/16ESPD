@@ -183,6 +183,7 @@ export PlanarBEVHardStopTransient__System
   var"withdraw"::Float64 = 1.0
   # Road grip multiplier, 0.3 for the low-grip comparison
   var"road_mu"::Float64 = 1.0
+  # 
   # Lecture 3's hard stop (`Lecture3.ABSStraightStop`) on the battery-electric car: from 80 km/h the
   # driver asks each wheel for `T_cmd`, and `Vehicle.Electric.RegenBlend` hands the demand to the
   # machine first and the rest to Lecture 3's four-channel ABS (`ABSUnit`), which modulates the

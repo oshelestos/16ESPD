@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BrakePedal(; name, i_p, F_max, __overrides)
 
+
 Ideal, massless brake-pedal lever driven by a 0–1 pedal command.
 
 The command is the driver's foot force as a fraction of `F_max`, clamped to 0–1, the way a

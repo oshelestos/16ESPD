@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BrakedWheel(; name, radius, J_w, F_z, tau_max, T_brake, w0, sAdhesion, sSlide, mu_A, mu_S, __overrides)
 
+
 A braked road wheel: rotating inertia, in-line friction brake, and slip-dependent tire contact.
 
 The three pieces that always appear together in a braking model, wired in the order torque

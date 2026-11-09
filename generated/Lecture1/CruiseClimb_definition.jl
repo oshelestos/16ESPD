@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CruiseClimb(; name, theta_e, with_I, with_D, k, Ti, Td, Nd, Ni, T_max, y_max, y_min, wp, wd, v_set, v0, tau0, gradient, start_time, duration, __overrides)
 
+
 Windup scenario: cruise at 130 km/h, meet a finite 10% climb, then watch the road flatten.
 
 Drives `BackCalcCruiseLoop`'s controller with a constant setpoint and a `GradeProfile`

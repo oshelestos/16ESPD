@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ClampingGate(; name, y_max, y_min, on, __overrides)
 
+
 Clamping anti-windup gate in front of an integrator.
 
 Passes the control error `u` through to the integrator, except while the limited controller

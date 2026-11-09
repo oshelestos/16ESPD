@@ -151,6 +151,7 @@ export EnergyManagerLowSoCTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Energy manager with a depleted battery (assumed bench): the charge latch is set from the start.
   # 
   # | time [s] | demand | rule |

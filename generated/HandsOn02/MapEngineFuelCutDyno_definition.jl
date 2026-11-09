@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MapEngineFuelCutDyno(; name, rpm, pedal_initial, pedal_final, t_step, p_m0, __overrides)
 
+
 `MapEngineDyno` after the hands-on 02 fuel-cut paste: the engine has fuel cut, and the dynamometer
 ramps the speed down to idle after 2 s, so a released pedal shows the cut and the resume.
 

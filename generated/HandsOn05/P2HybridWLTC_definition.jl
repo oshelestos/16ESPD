@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    P2HybridWLTC(; name, m, radius, k, Ti, tau_max, tau_brake, dv_wheel, engage_rpm, engage_width_rpm, lock_rpm, lock_width_rpm, N_locked, __overrides)
 
+
 Rule-based P2 hybrid on the planar WLTC bench (derived; Lecture 5 step 3).
 The manager commands engine power and torque; K0 retains the step-2 launch and lock ramps.
 The electric-mode CVT target follows demand power to avoid starting against an idle-speed ratio.

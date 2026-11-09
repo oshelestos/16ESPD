@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ColdGasNozzle(; name, A_t, gamma, R, c_p, p_a, eta_n, p_close, __overrides)
 
+
 Choked compressed-air nozzle with ideal expansion to ambient pressure.
 
 The command is clamped to `0 <= cmd <= 1` and scales the total throat area.

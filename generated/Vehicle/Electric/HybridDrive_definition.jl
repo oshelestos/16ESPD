@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    HybridDrive(; name, T_max, P_rated, w_base, V_nom, V_design, size_scale, R, L, J, T_f, K_i, k_w, C, w_reg, tau_loss_base, k, I_max, d_max, T_i, V_on, f_s, t_sw, eps, E, Q_nom, R0, SoC0, ratio, P_aux, T_aux, __overrides)
 
+
 P2 hybrid electric drive with the ElectricDrive composition and interface (derived from Lecture 4).
 The 2011 Sonata anchors the 30 kW, 205 N.m and 270 V, 1.4 kWh defaults (ORNL-2011).
 ORNL also prints 105 N.m; 205 N.m is used because it matches 30 kW near 1400 rpm.

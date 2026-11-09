@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Throttle(; name, D_thr, alpha_0, A_idle, C_d, p_a, T_a, R, gamma, Pi_lin, __overrides)
 
+
 Throttle plate as a compressible orifice: ambient air in, mass flow into the manifold out.
 
     alpha    = alpha_0 + u_thr (pi/2 - alpha_0)

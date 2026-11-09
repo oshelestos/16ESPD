@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CentrifugalClutch(; name, engage_rpm, engage_width_rpm, tau_max, w_regularization, __overrides)
 
+
 Smooth centrifugal launch clutch.
 
 The torque capacity rises continuously with input-shaft speed. A regularized Coulomb law opposes

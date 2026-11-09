@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ClampingCruiseClimb(; name, theta_e, with_I, with_D, k, Ti, Td, Nd, T_max, y_max, y_min, wd, v_set, v0, tau0, gradient, start_time, duration, __overrides)
 
+
 The clamping counterpart of `CruiseClimb`: same scenario, closed with `CruiseLoop`.
 
 Signal paths match `CruiseClimb` — `loop.plant.v_kmh`, `loop.controller.y`,

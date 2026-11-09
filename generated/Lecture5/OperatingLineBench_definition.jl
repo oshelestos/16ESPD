@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    OperatingLineBench(; name, wheel_rpm, P_start, P_hold, P_end, J_engine, i_overdrive, __overrides)
 
+
 CVT holding an engine on its best-BSFC line, on a dyno at fixed wheel speed (assumed bench).
 
 The requested power ramps from 1 kW to a 32 kW hold, then past peak power. The operating line

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FullCarABSStop(; name, pedal, road_mu, abs_on, lambda_target, T_p, brake_time, speed_kmh, pedal_cmd, rpm0, p_m0, p_vac0, __overrides)
 
+
 Lecture 3 whole-car ABS stop: `FullCarVacuumStop`, the Hands-on 02 map engine with fuel cut, its
 flywheel and the CVT driving the hydraulic braked wheel, with Hands-on 03 step 03's ABS added as
 `ABSStop` adds it: a `Vehicle.Brake.ABSValve` in each brake line, both commanded by

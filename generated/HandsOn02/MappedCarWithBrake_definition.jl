@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MappedCarWithBrake(; name, ratio_initial, __overrides)
 
+
 Hands-on 02 step 06 B: `MappedCar` with a service brake between the body and the road.
 
 ## Parameters:

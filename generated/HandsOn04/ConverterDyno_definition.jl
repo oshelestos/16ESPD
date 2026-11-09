@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ConverterDyno(; name, V, I_ref, rpm_start, rpm_end, __overrides)
 
+
 Hands-on 04 step 02 bench: the machine with its field input behind the converter, on a 350 V
 supply. The converter is asked for 500 A and gives its 332.2 A limit; the dyno holds standstill
 for 1 s, ramps to 10 000 rpm over 100 s and holds there. The shaft gives 320 N.m up to the base

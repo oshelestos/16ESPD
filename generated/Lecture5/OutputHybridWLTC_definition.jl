@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    OutputHybridWLTC(; name, electric_drive, rear, m, radius, k, Ti, tau_max, tau_engine_peak, tau_brake, dv_wheel, engage_rpm, engage_width_rpm, lock_rpm, lock_width_rpm, N_locked, reduction, eta_start, T_max, i_launch, __overrides)
 
+
 P3 output-coupled hybrid WLTC; rear=true selects the P4 through-the-road plant.
 The manager retains CVT-input torque coordinates. The plant converts its machine
 command to the physical output-side shaft and accounts for starter power separately.

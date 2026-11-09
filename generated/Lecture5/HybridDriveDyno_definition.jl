@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    HybridDriveDyno(; name, P_rated, T_max, V_design, rpm_start, rpm_end, __overrides)
 
+
 Battery-fed hybrid drive envelope bench (assumed; Lecture 4 dyno method). A saturated torque
 request exposes the current ceiling and field weakening. Hold 200 rpm for one second, ramp
 to 4000 rpm in 20 seconds, then hold for one second. Rotor acceleration costs J dw/dt;

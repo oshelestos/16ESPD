@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BrakeChannel(; name, dt, T_p, lambda_1, lambda_lock, alpha_rel, beta_reapply, l_rec, T_hold_max, k_dec, k_inc_fast, k_inc_slow, v_min, __overrides)
 
+
 One sampled wheel-brake channel combining driver demand, ESP allocation, and ABS.
 
 Positive ESP demand enters before ABS. A negative ESP request cuts pressure after ABS so

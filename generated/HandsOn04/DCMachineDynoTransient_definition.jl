@@ -169,6 +169,7 @@ export DCMachineDynoTransient__System
   var"rpm_start"::Float64 = 3283.0
   # Dyno speed after the ramp [rpm]
   var"rpm_end"::Float64 = 3600.0
+  # 
   # Hands-on 04 step 01 bench: the machine on a 350 V supply, the dyno holding 3283 rpm for 1 s,
   # ramping to 3600 rpm over 10 s and holding there. The torque falls from 320 N.m at base speed
   # through zero just below 3447 rpm to -304 N.m, generating.

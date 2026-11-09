@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CoupledHybridPowertrain(; name, speed_commanded, i_crank, eta_crank, P_rated, T_max, firing_rpm, firing_width, engine_speed_start, position_start, __overrides)
 
+
 P0 crank-coupled hybrid: machine--belt--engine--K0--CVT--front output.
 The shared 30 kW HybridDrive is a controlled comparison, not a production P0 rating.
 An open K0 cannot give electric-only traction: the machine must turn the engine

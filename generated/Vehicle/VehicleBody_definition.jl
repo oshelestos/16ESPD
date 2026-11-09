@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    VehicleBody(; name, m, CdA, rho, v_nominal, f_r, g, __overrides)
 
+
 Longitudinal vehicle body: tractive force in at the flange, resisted by drag,
 rolling resistance and road grade.
 

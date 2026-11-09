@@ -151,6 +151,7 @@ export SoCCorrectedFuelBatteryTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # A real `Vehicle.Electric.Battery` (Leaf defaults, R0 = 0.1 Ohm) driven by a current source
   # through whole periods of a sine, so its charge, and SoC, return to the start while `R0 i^2` is
   # burned throughout. The battery's `E i` feeds `SoCCorrectedFuel` beside a constant fuel flow and

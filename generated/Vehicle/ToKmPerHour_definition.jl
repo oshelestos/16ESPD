@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ToKmPerHour(; name, __overrides)
 
+
 Signal-level unit conversion: m/s to km/h.
 
 A deliberate exception to composing the standard library. `BlockComponents.Math.Gain(k = 3.6)`

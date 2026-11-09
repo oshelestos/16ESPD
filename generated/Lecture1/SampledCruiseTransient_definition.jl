@@ -226,6 +226,7 @@ export SampledCruiseTransient__System
   var"v0"::Float64 = 25.0
   var"tau0"::Float64 = 31.078
   var"t_step"::Float64 = 0.0
+  # 
   # Flat-road 90 to 110 km/h setpoint step for `SampledCruiseLoop`.
   # 
   # Mirrors `CruiseLoopStep` using a sampled discrete controller, so notebook 09 can sweep `Ts`

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MappedCarCoast(; name, speed_kmh, pedal_cmd, rpm0, p_m0, __overrides)
 
+
 Hands-on 02 step 06 A bench: `MappedCarCruise` at 90 km/h with the pedal released at 5 s.
 
 ## Parameters:

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ThrottleSensorSweep(; name, phi_from, phi_to, duration, R_wiper1, __overrides)
 
+
 The throttle position sensor's characteristic: the plate angle swept slowly past both stops while
 the ECU reads both tracks.
 

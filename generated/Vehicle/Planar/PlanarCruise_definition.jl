@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarCruise(; name, cycle, m, radius, k, Ti, tau_max, v_set, v0, dv_wheel, __overrides)
 
+
 The WLTC bench holding a constant `v_set` instead of the trace, from a start at that speed: the
 constant-speed road-load check.
 

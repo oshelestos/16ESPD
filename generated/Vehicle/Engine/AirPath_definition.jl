@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    AirPath(; name, A_idle, C_d, D_thr, V_m, V_d, T_m, __overrides)
 
+
 Mean-value air path of a throttled petrol engine: throttle, intake manifold and cylinders.
 
 Throttle position and engine speed set the manifold pressure `p_m`, the signal the engine maps
@@ -33,11 +34,12 @@ about 100 kPa at wide-open throttle, and a manifold time constant of about 0.15 
 
  * `u_thr` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
  * `omega` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `p_m` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
  * `mdot_cyl` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
  * `mdot_thr` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))

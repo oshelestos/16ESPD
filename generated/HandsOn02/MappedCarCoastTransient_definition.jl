@@ -151,6 +151,7 @@ export MappedCarCoastTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Hands-on 02 step 06 A bench: `MappedCarCruise` at 90 km/h with the pedal released at 5 s.
   var"model"::Union{Nothing, System} = VehicleSystemsComponents.HandsOn02.MappedCarCoast(; name=:MappedCarCoast)
   __system::System = MappedCarCoastTransient__System(; name, var"alg"=var"alg", var"start"=var"start", var"stop"=var"stop", var"abstol"=var"abstol", var"reltol"=var"reltol", var"saveat"=var"saveat", var"dtmax"=var"dtmax", var"tstops"=var"tstops", var"automatic_discontinuity_detection"=var"automatic_discontinuity_detection", var"optimize"=var"optimize", var"progress"=var"progress", var"respecialize"=var"respecialize", var"specialization"=var"specialization", var"verbose"=var"verbose", var"log_file"=var"log_file")

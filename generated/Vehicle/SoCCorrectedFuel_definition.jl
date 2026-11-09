@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SoCCorrectedFuel(; name, eta_eb, H_u, rho_f, d_reg, __overrides)
 
+
 SoC-corrected fuel of a drive-cycle run: the fuel the engine burned, plus the fuel it would take
 to put back the energy the battery's store gave up, both per 100 km of distance driven.
 

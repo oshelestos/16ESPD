@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Battery(; name, E, R0, Q_nom, SoC0, __overrides)
 
+
 Traction battery as a constant open-circuit voltage behind a series resistance, with its state
 of charge counted from the current (coulomb counting).
 

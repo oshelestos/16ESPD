@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    RoadsterLaunch(; name, m, CdA, T_max, P_max, J_w, radius, mu_A, mu_S, grip, share, h_over_L, fan_cmd, skirt_gap, thrust_cmd, tank_volume, tank_pressure, tank_n, A_t, down_fraction, __overrides)
 
+
 Standing-start launch of a 1 MW car with optional stationary suction and ideal traction control.
 
 The traction control requests the torque that holds the tire just below peak adhesion,

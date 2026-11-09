@@ -241,6 +241,7 @@ export RoadsterLaunchTransient__System
   var"share"::Float64 = 0.55
   # Center-of-mass height over wheelbase; 0 for all-wheel drive
   var"h_over_L"::Float64 = 0.17
+  # 
   # Standing-start launch of a 1 MW car with optional stationary suction and ideal traction control.
   # 
   # The traction control requests the torque that holds the tire just below peak adhesion,

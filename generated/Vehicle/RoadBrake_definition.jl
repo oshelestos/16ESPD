@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    RoadBrake(; name, v_reg, __overrides)
 
+
 Service brake acting between the car body and the road.
 
 A nonnegative command sets the friction force magnitude, applied against the body's motion

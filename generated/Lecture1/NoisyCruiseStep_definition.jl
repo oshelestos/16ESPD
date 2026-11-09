@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    NoisyCruiseStep(; name, theta_e, k, Ti, Td, Nd, T_max, y_max, y_min, wd, m, CdA, grade, v_lo, v_hi, v0, tau0, t_step, amplitude, __overrides)
 
+
 Flat-road 90 to 110 km/h setpoint-step scenario for `NoisyCruiseLoop`.
 
 The PID actions are enabled so varying the ordinary parameter `Nd` changes derivative filtering

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SpeedCommandedVariator(; name, i_launch, i_overdrive, ratio_time, output_rpm_floor, ratio_initial, __overrides)
 
+
 Ideal continuously variable transmission that holds its input shaft at a commanded speed.
 
 The physics and parameters are ControlledVariator's: the ratio is total engine-side to

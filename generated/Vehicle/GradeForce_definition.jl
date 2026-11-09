@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    GradeForce(; name, m, g, __overrides)
 
+
 Road-grade force from a time-varying gradient input.
 
 `TranslationalComponents.Components.Mass` only offers a fixed `theta` parameter for

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Solenoid(; name, R, L_inf, L_0, g_0, g_max, __overrides)
 
+
 A solenoid actuator: an electrical winding and a magnetic armature, coupled through the air gap.
 
     L(g)  = L_inf + L_0 g_0 / (g + g_0),       g = g_max - x

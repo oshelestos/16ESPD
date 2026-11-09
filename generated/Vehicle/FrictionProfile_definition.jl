@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FrictionProfile(; name, low, start_time, duration, __overrides)
 
+
 Road-friction scenario: normal grip, a finite low-friction patch, then normal grip again.
 
 The low-friction interval starts at `start_time` and lasts for `duration`. The finite duration is

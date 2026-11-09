@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    P2OperatingLineWLTC(; name, m, radius, k, Ti, tau_max, dv_wheel, engage_rpm, engage_width_rpm, tau_brake, brake_gain, lock_rpm, lock_width_rpm, P_peak, N_locked, __overrides)
 
+
 Engine-only operating-line WLTC with pedal-based power demand and shaft-speed K0 lock-up.
 The line target is floored above idle. Machine torque, losses and inertia are zero.
 

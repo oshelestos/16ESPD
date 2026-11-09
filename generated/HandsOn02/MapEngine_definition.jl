@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MapEngine(; name, __overrides)
 
+
 Pedal in; torque, fuel and CO2 out, read from the maps at engine speed and manifold pressure.
 
 The pedal sets the throttle directly, so the only lag between pedal and torque is the manifold
@@ -16,11 +17,12 @@ caps itself at the full-load curve.
 ## Connectors
 
  * `pedal` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `spline` - This connector represents a rotational spline with angle and torque as the potential and flow variables, respectively. ([`Spline`](@ref))
  * `support` - This connector represents a rotational spline with angle and torque as the potential and flow variables, respectively. ([`Spline`](@ref))
  * `p_m` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))

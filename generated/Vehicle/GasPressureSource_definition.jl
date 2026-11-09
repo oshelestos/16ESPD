@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    GasPressureSource(; name, __overrides)
 
+
 Ideal pressure reservoir on a gas hose: holds the hose at `p` whatever air flows in or out. A
 bench stand-in for a vacuum source too large to be drawn down, such as an engine manifold at a
 fixed operating point.
@@ -14,11 +15,12 @@ fixed operating point.
 ## Connectors
 
  * `p` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `port` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `port` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
 """
 @component function GasPressureSource(; name = nothing, __overrides = Dict{String, Any}())
   isnothing(name) && throw(ArgumentError("""

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ThrottlePedalStep(; name, u_0, u_step, t_step, u_end, t_ramp, d_ramp, U_batt, k, Ti, Td, R_wiper1, eps_lh, __overrides)
 
+
 The electronic throttle answering the driver's pedal: a step opening, a hold, then a ramp back.
 
 The ECU commands the opening `u_cmd`: it starts at limp home, steps to `u_step` at `t_step`, and

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Manifold(; name, V_m, T_m, R, __overrides)
 
+
 Intake manifold as one isothermal receiver: the pressure is its only state.
 
 ## Parameters:
@@ -20,11 +21,12 @@ Intake manifold as one isothermal receiver: the pressure is its only state.
 ## Connectors
 
  * `mdot_thr` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `mdot_cyl` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
  * `p_m` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
 

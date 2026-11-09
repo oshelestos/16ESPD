@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    AuxLoad(; name, P_aux, T, __overrides)
 
+
 The 12 V auxiliaries as a constant power drawn from the traction battery's DC link: the DC-DC
 converter and everything behind it (control units, pumps, fans, lights), lumped into one draw
 `P_aux` (deck 7's O_aux).

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestBoostChopper(; name, V_in, d, R_load, f_s, L, C_out, __overrides)
 
+
 Resistively loaded 48 V boost at constant duty, with external 20 uF output
 capacitance. Starts from zero stored energy; 6 ms covers settling and
 whole-period steady-state checks. A 1 us maximum step resolves the PWM.

@@ -181,6 +181,7 @@ export HybridDriveDynoTransient__System
   var"rpm_start"::Float64 = 200.0
   # Final dyno speed [rpm] (assumed)
   var"rpm_end"::Float64 = 4000.0
+  # 
   # Battery-fed hybrid drive envelope bench (assumed; Lecture 4 dyno method). A saturated torque
   # request exposes the current ceiling and field weakening. Hold 200 rpm for one second, ramp
   # to 4000 rpm in 20 seconds, then hold for one second. Rotor acceleration costs J dw/dt;

@@ -151,6 +151,7 @@ export EnergyManagerBenchTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Energy manager driven through every mode and back, with the battery's charge closing the loop
   # (assumed bench).
   # 

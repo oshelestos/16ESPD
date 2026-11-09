@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BEVEnergyBill(; name, m, radius, k, Ti, tau_max, v_fade, P_aux, ratio, dv_wheel, __overrides)
 
+
 Hands-on 04 step 06: the step 04 bench with an energy meter on every link. Each `E_` state
 integrates one power from t = 0, in joules: out of the cells (`E_cells`), at the battery
 terminals (`E_dc`, split into `E_dc_out` discharged and `E_dc_in` charged back), the battery

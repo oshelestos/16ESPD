@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CoupledHybridWLTC(; name, electric_drive, m, radius, k, Ti, tau_max, tau_engine_peak, tau_brake, dv_wheel, engage_rpm, engage_width_rpm, lock_rpm, lock_width_rpm, N_locked, i_crank, eta_crank, T_max, k0_capacity, __overrides)
 
+
 P0 crank-coupled hybrid WLTC with a drive-side crank torque limit including belt efficiency.
 EnergyManager shares this conservative limit between drive and regeneration.
 

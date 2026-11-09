@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarBEVHardStop(; name, m, radius, v0, T_cmd, brake_time, t_apply, tau_max, P_charge, v_fade, P_aux, ratio, withdraw, road_mu, __overrides)
 
+
 Lecture 3's hard stop (`Lecture3.ABSStraightStop`) on the battery-electric car: from 80 km/h the
 driver asks each wheel for `T_cmd`, and `Vehicle.Electric.RegenBlend` hands the demand to the
 machine first and the rest to Lecture 3's four-channel ABS (`ABSUnit`), which modulates the

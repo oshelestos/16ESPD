@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TorqueToPedal(; name, file, dataset, __overrides)
 
+
 Steady feed-forward inverse of the default Lecture 2 MappedEngine.
 
 The generated map in scripts/torque_to_pedal.jl inverts fired brake torque, steady

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    OutputHybridPowertrain(; name, rear, speed_commanded, i_output, P_rated, T_max, firing_rpm, firing_width, starter_torque, engine_speed_start, position_start, __overrides)
 
+
 Output-coupled 30 kW hybrid. `rear=false` is P3: machine joins the front
 CVT output. `rear=true` is P4: machine drives only `rear_spline`; the engine
 still drives front `spline`. Each output is wheel-speed, before an external

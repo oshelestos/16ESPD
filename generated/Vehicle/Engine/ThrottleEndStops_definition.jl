@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ThrottleEndStops(; name, phi_min, phi_max, c, d, __overrides)
 
+
 The two mechanical end stops of a throttle plate: closed at `phi_min`, wide open at `phi_max`.
 
 Between the stops no torque acts. Past a stop the plate meets a stiff spring-damper, pushing back

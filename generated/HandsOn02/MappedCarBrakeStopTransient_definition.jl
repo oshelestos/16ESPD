@@ -151,6 +151,7 @@ export MappedCarBrakeStopTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Hands-on 02 step 06 B bench: `MappedCarCoast` on the car with a brake, braked to rest from
   # 90 km/h as the pedal is released.
   var"model"::Union{Nothing, System} = VehicleSystemsComponents.HandsOn02.MappedCarBrakeStop(; name=:MappedCarBrakeStop)

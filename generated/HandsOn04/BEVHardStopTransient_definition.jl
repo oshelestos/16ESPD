@@ -181,6 +181,7 @@ export BEVHardStopTransient__System
   var"v_fade"::Float64 = 10.0
   var"withdraw"::Float64 = 1.0
   var"road_mu"::Float64 = 1.0
+  # 
   # Hands-on 04 step 05 hard stop: Lecture 3's ABS stop from 80 km/h on your electric car. The driver
   # asks each wheel for `T_cmd`; your `RegenBlend` gives the machine what its limits allow and the
   # rest to Lecture 3's four-channel ABS, which modulates the friction brakes. The meters split the

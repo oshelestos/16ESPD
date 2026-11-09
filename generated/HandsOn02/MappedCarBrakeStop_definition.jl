@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MappedCarBrakeStop(; name, speed_kmh, pedal_cmd, rpm0, p_m0, __overrides)
 
+
 Hands-on 02 step 06 B bench: `MappedCarCoast` on the car with a brake, braked to rest from
 90 km/h as the pedal is released.
 

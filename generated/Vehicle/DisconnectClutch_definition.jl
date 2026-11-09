@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    DisconnectClutch(; name, actuator_time, tau_max, w_regularization, position_start, clamp_width, __overrides)
 
+
 Commanded K0 engine disconnect clutch with an electrohydraulic actuator (assumed fidelity).
 
 A stdlib first-order actuator starts open; its 0.15 s time constant gives a 90% rise in

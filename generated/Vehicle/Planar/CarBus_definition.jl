@@ -5,6 +5,7 @@
 
 
 @doc Markdown.doc"""
+
 The planar car's measurement bus, as the car sends it: every signal the car measures about
 itself, on one port. One wire carries all of them, the way a vehicle network carries the
 sensors' messages to every control unit that listens.

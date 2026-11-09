@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FeedforwardCruise(; name, tau_ff, grade, m, CdA, v0, __overrides)
 
+
 Open-loop feedforward cruise: a fixed torque computed from the nominal force balance.
 
 The command is a constant `tau_ff` — the torque that holds the target speed on the nominal car

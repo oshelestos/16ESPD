@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    FuelMap(; name, rpm_axis, kpa_axis, torque_data, fuel_data, lambda_data, hc_data, co_data, nox_data, curve_axis, full_load_rpm, full_load_data, closed_rpm, closed_data, __overrides)
 
+
 Fuel mass flow read at engine speed and manifold pressure.
 
 The table is in g/s, as the source data is; the output is in kg/s. It defaults to the EPA ALPHA

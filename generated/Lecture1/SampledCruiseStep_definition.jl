@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SampledCruiseStep(; name, theta_e, with_I, with_D, Ts, k, Ti, Td, Nd, Ni, T_max, y_max, y_min, wp, wd, v_lo, v_hi, v0, tau0, t_step, __overrides)
 
+
 Flat-road 90 to 110 km/h setpoint step for `SampledCruiseLoop`.
 
 Mirrors `CruiseLoopStep` using a sampled discrete controller, so notebook 09 can sweep `Ts`

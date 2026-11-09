@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    DCMachine(; name, field_weakening, T_max, w_base, V_nom, R, L, J, T_f, K_i, k_w, C, w_reg, tau_loss_base, k, __overrides)
 
+
 Hands-on 04 step 01: a DC-equivalent machine. The stdlib back-EMF element sits behind the
 armature resistance and inductance, and the deck's losses are parts on the shaft.
 

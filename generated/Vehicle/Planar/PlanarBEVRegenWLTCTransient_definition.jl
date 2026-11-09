@@ -176,6 +176,7 @@ export PlanarBEVRegenWLTCTransient__System
   var"P_charge"::Float64 = 80500.0
   var"v_fade"::Float64 = 10.0
   var"P_aux"::Float64 = 300.0
+  # 
   # `PlanarBEVWLTC` with series regenerative braking: `Vehicle.Electric.RegenBlend` takes the place
   # of `TorqueSplit`, and the share of a braking demand the machine does not take goes to all four
   # friction brakes in equal parts, as Lecture 3's brake demand does.

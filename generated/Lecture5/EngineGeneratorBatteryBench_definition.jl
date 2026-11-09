@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    EngineGeneratorBatteryBench(; name, E_bus, Q_bus, R_bus, P_1, P_2, P_3, P_4, P_5, P_6, t_hold, t_ramp, __overrides)
 
+
 Engine-generator charging a 270 V battery, stepped along the best-BSFC line and past the
 engine's full load (assumed bench).
 

@@ -171,6 +171,7 @@ export MappedCarCruiseTransient__System
   var"pedal_cmd"::Float64 = 0.0916
   var"rpm0"::Float64 = 2182
   var"p_m0"::Float64 = 54420
+  # 
   # Hands-on 02 step 05 bench: the car started in steady cruise at one pedal.
   # 
   # The defaults hold 90 km/h. The engine speed and the CVT ratio start where that pedal settles

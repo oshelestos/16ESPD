@@ -151,6 +151,7 @@ export P2HybridWLTCTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Rule-based P2 hybrid on the planar WLTC bench (derived; Lecture 5 step 3).
   # The manager commands engine power and torque; K0 retains the step-2 launch and lock ramps.
   # The electric-mode CVT target follows demand power to avoid starting against an idle-speed ratio.

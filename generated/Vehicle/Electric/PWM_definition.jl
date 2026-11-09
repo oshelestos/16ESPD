@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PWM(; name, f_s, t_sw, __overrides)
 
+
 Pulse-width modulator: compares the duty command `u` with a triangular carrier at `f_s` and
 outputs the gate command `y` that drives a `Switch`.
 

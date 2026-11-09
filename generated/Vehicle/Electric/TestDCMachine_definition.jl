@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestDCMachine(; name, V, rpm_start, rpm_end, __overrides)
 
+
 Dyno bench for the library `DCMachine`: the terminals sit on a stiff supply of `V`, and the
 dyno holds the shaft at `rpm_start` for 1 s, ramps it to `rpm_end` over 10 s and holds it there
 for 1 s. The ramp traces the machine's torque-speed line at that voltage.

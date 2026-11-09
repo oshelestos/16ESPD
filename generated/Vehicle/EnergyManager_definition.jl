@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    EnergyManager(; name, geared_limit, electric_drive, mapped_limits, P_on, P_off, tau_coupled_on, tau_coupled_off, P_line_max, dP_boost, P_peak, P_chg, P_dis, SoC_dis_on, SoC_dis_off, SoC_on, SoC_off, SoC_full, dSoC_full, T_max, P_max, P_regen, v_fade, w_idle, w_on, w_off, tau_traction, dtau, dSoC_boost, latch_time, __overrides)
 
+
 Rule-based energy manager of a P2 hybrid: splits the driver's torque demand at the transmission
 input between engine, machine and friction brakes (derived; Lecture 5 S3). Signals only.
 

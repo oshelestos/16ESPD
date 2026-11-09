@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestSoCCorrectedFuel(; name, mdot, P, v_car, __overrides)
 
+
 Constant fuel flow, stored-power draw and speed into `SoCCorrectedFuel`, so that every integral
 is a product a test can work out by hand. Defaults: 1 g/s of fuel, 1 kW drawn from the battery
 and 20 m/s (assumed test inputs).

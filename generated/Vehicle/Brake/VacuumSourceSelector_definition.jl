@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    VacuumSourceSelector(; name, use_pump, __overrides)
 
+
 Bench hose junction that joins the booster's hose to one vacuum source, the intake manifold or an
 electric pump, chosen by `use_pump`. The source not chosen is cut off and sees no flow.
 
@@ -22,21 +23,24 @@ electric pump, chosen by `use_pump`. The source not chosen is cut off and sees n
 
 ## Connectors
 
- * `booster` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `booster` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
- * `manifold` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+ * `manifold` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
- * `pump` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+ * `pump` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
 """
 @component function VacuumSourceSelector(; name = nothing, var"use_pump"=Float64(0.0), __overrides = Dict{String, Any}())
   isnothing(name) && throw(ArgumentError("""

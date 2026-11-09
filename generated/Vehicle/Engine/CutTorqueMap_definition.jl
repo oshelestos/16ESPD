@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CutTorqueMap(; name, rpm_axis, kpa_axis, torque_data, fuel_data, lambda_data, hc_data, co_data, nox_data, curve_axis, full_load_rpm, full_load_data, closed_rpm, closed_data, __overrides)
 
+
 Engine brake torque read at speed and manifold pressure, blended to the closed-throttle curve by a
 fuel-cut fraction.
 

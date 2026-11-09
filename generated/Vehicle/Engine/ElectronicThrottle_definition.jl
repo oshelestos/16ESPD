@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ElectronicThrottle(; name, phi_span, V_window, U_batt, R_a, L_a, k_m, J_m, n_gear, J_p, phi_lh, T_pre, c_spring, eps_lh, d_bearing, k, Ti, Td, Nd, phi_0, R_wiper1, __overrides)
 
+
 An electronic throttle (drive by wire): the ECU positions the throttle plate with a DC motor and
 closes a position loop on the plate's own position sensor.
 

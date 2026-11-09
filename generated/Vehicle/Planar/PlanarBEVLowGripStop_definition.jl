@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarBEVLowGripStop(; name, m, radius, v0, T_cmd, brake_time, t_apply, tau_max, P_charge, v_fade, P_aux, ratio, withdraw, road_mu, __overrides)
 
+
 Low-grip version of step 5's hard stop, on Lecture 3's road (grip ×0.3).
 The ABS withdrawal rule defaults ON: `withdraw = 0` runs the locked-wheel counterfactual.
 Report stopping distance from pedal application to speed below 0.5 m/s and minimum front

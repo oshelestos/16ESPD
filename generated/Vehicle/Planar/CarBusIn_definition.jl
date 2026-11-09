@@ -5,6 +5,7 @@
 
 
 @doc Markdown.doc"""
+
 The receiving end of `CarBus`: the same signals, as inputs. A control unit or an unpack block
 (`BusMotion`, `BusSlip`, `BusSlipAngle`, `BusWheelSpeed`) listens on one of these.
 """

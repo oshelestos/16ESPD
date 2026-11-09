@@ -181,6 +181,7 @@ export FeedforwardCruiseTransient__System
   var"CdA"::Float64 = 0.63
   # Initial speed (25 m/s = 90 km/h)
   var"v0"::Float64 = 25.0
+  # 
   # Open-loop feedforward cruise: a fixed torque computed from the nominal force balance.
   # 
   # The command is a constant `tau_ff` — the torque that holds the target speed on the nominal car

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Engine(; name, theta_e, tau_e, T_max, __overrides)
 
+
 Torque command in, shaft torque out, through a transport delay, a first-order lag and a torque
 ceiling.
 

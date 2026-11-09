@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    WheeledDriveline(; name, i, r, J_w, __overrides)
 
+
 Gearbox and no-slip wheel with a rotational wheel state.
 
 `J_w = 1 kg.m^2` is representative of a passenger-car road wheel and tire: most of a roughly

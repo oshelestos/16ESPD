@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    RoadCar(; name, road_file, road, load_transfer, m, Iz, a, b, tw, radius, J, mu_A, mu_S, sAdhesion_f, sAdhesion_r, mu_scale_fl, mu_scale_fr, mu_scale_rl, mu_scale_rr, T_brake, tau_max, i_s, t_k, ackermann, h_cg, T_lt, __overrides)
 
+
 Four-wheel planar vehicle with physical steering, wheel, spin, and load paths.
 
 The car measures itself: an ideal `PlanarCarSensors` cluster inside it reads the chassis, the
@@ -63,13 +64,14 @@ All variables are resolved in the planar world frame. ([`Frame2D`](@ref))
  * `tau_fr` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
  * `tau_rl` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
  * `tau_rr` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `bus` - The planar car's measurement bus, as the car sends it: every signal the car measures about
+ * `bus` - 
+The planar car's measurement bus, as the car sends it: every signal the car measures about
 itself, on one port. One wire carries all of them, the way a vehicle network carries the
 sensors' messages to every control unit that listens.
 
 A `CarBus` connects to a `CarBusIn`, field by field. Two `CarBus` ports would both drive the
 same signals, and the compiler does not reject that wiring, so connect a `CarBus` only to
-`CarBusIn` ports. ([`CarBus`](@ref))
+`CarBusIn` ports. ([`CarBus`](@ref))
 """
 @component function RoadCar(; name = nothing, var"road_file"="dyad://VehicleSystemsComponents/roads/uniform_mu.crg", var"load_transfer"=false, var"m"=Float64(1500.0), var"Iz"=Float64(2500.0), var"a"=1.2, var"b"=1.5, var"tw"=1.55, var"radius"=0.31, var"J"=Float64(1.0), var"mu_A"=Float64(1.0), var"mu_S"=0.8, var"sAdhesion_f"=0.12, var"sAdhesion_r"=0.09, var"mu_scale_fl"=Float64(1.0), var"mu_scale_fr"=Float64(1.0), var"mu_scale_rl"=Float64(1.0), var"mu_scale_rr"=Float64(1.0), var"T_brake"=0.03, var"tau_max"=Float64(2500.0), var"i_s"=Float64(16.0), var"ackermann"=Float64(1.0), var"h_cg"=Float64(0.0), var"T_lt"=0.05, var"road"=nothing, var"t_k"=nothing, __overrides = Dict{String, Any}())
   isnothing(name) && throw(ArgumentError("""

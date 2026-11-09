@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Switch(; name, R_on, R_off, C_oss, __overrides)
 
+
 Electronic power switch (MOSFET or IGBT) as a resistance that the gate command moves between an
 on and an off value, with the device's output capacitance across it. The standard library has
 no switch, so the channel is its `VariableResistor`.

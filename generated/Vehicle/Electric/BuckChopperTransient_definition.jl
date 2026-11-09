@@ -181,6 +181,7 @@ export BuckChopperTransient__System
   var"f_s"::Float64 = 20000.0
   # Inductance
   var"L"::Float64 = 0.0001
+  # 
   # Bench for the library `BuckChopper`, the circuit of deck 7 slide 28: a stiff `V_in` supply, the
   # chopper at a fixed duty `d`, and a resistive load. The inductor starts without current, so the
   # run shows the current climbing into its periodic steady state with `L / R` = 0.14 ms (defaults),

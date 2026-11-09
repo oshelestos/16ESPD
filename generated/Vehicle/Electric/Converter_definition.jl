@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Converter(; name, I_max, d_max, T_i, V_on, f_s, t_sw, eps, __overrides)
 
+
 Average converter: the traction inverter and its current control, as one duty ratio between the
 DC link and the machine, with a current limit and a voltage limit (deck 7 slides 27-33, averaged
 over a switching period).

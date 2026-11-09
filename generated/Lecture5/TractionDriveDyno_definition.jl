@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TractionDriveDyno(; name, T_max, E_bus, R0_bus, Q_bus, rpm_start, rpm_end, __overrides)
 
+
 Traction-drive envelope bench (assumed; Lecture 4 dyno method). `Vehicle.Electric.TractionDrive`
 on a battery bus at `HybridDrive`'s 270 V. With the defaults, 1 mOhm and 100 kWh, the bus is
 stiff and the envelope is the drive's own; `TractionDrivePackDynoTransient` runs it on the

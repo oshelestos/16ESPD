@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    WideOpenThrottle(; name, __overrides)
 
+
 Open-loop wide-open-throttle run: full torque from rest on flat road.
 
 A `Car` cannot be a `TransientAnalysis` model on its own because its `tau_cmd` input would be

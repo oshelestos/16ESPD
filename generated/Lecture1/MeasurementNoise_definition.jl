@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MeasurementNoise(; name, amplitude, f1, f2, f3, f4, f5, f6, p1, p2, p3, p4, p5, p6, __overrides)
 
+
 Additive measurement noise: a deterministic sum of sines.
 
 Adds broadband noise to a signal (the km/h speed measurement in notebook 07) so the notebook can

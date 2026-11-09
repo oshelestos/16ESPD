@@ -7,17 +7,19 @@
 @doc Markdown.doc"""
    GasMassFlowSource(; name, __overrides)
 
+
 Ideal mass-flow source on a gas hose: pushes `mdot` out of its port into whatever is connected,
 at whatever pressure that sets.
 
 ## Connectors
 
  * `mdot` - This connector represents a real signal as an input to a component ([`RealInput`](@ref))
- * `port` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `port` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
 """
 @component function GasMassFlowSource(; name = nothing, __overrides = Dict{String, Any}())
   isnothing(name) && throw(ArgumentError("""

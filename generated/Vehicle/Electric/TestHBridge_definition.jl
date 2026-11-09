@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TestHBridge(; name, V_dc, m, f_1, f_s, R_load, L_load, __overrides)
 
+
 Bench for the library `HBridge`, the circuit of deck 7 slides 30 and 31: the Leaf pack's 350 V
 as a stiff DC link, the bridge, and an R-L load such as a motor winding. A sine reference of
 amplitude `m` at `f_1` drives the bridge; the load current starts at zero and its offset decays

@@ -161,6 +161,7 @@ export PedalStopTransient__System
   var"log_file"::String = ""
   var"pedal"::Float64 = 0.6
   var"road_mu"::Float64 = 1.0
+  # 
   # Hands-on 03 step 02 bench: pedal, booster, tandem master cylinder, two brake lines, and a
   # hydraulically braked wheel stopping the hands-on vehicle body.
   var"model"::Union{Nothing, System} = VehicleSystemsComponents.HandsOn03.PedalStop(; name=:PedalStop)

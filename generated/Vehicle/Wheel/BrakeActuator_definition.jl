@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BrakeActuator(; name, T, tau_max, w0, __overrides)
 
+
 In-line wheel brake: commanded-magnitude Coulomb friction with first-order hydraulic response.
 
 The brake sits in the shaft line between `spline_a` and `spline_b`, with the friction reaction

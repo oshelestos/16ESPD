@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    VacuumBooster(; name, SR, F_cut, F_jump, A_d, F_rs0, K_rs, V_f0, V_r0, F_app, F_rel, F_w, C_aa, C_av, C_vm, C_leak, n, s_rest, T, R, p_atm, p_init, __overrides)
 
+
 Dynamic vacuum booster: two air chambers on either side of the diaphragm, a static poppet valve,
 and a check valve to the vacuum source, behind the same mechanical ports as `StaticBooster`.
 
@@ -61,11 +62,12 @@ defaults; (assumed) textbook-typical, no readable source.
  * `input` - This connector represents a mechanical flange with position and force as the potential and flow variables, respectively. ([`Flange`](@ref))
  * `rod_out` - This connector represents a mechanical flange with position and force as the potential and flow variables, respectively. ([`Flange`](@ref))
  * `support` - This connector represents a mechanical flange with position and force as the potential and flow variables, respectively. ([`Flange`](@ref))
- * `vacuum` - One end of a gas hose: absolute pressure across it, air mass flow through it.
+ * `vacuum` - 
+One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air
 the other end receives. `mdot` is positive into the component that owns the port. A port left
-unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
+unconnected carries no flow: a capped hose. ([`GasPort`](@ref))
  * `p_vac` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
 
 ## Variables

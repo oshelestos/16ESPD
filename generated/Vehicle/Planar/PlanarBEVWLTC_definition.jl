@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarBEVWLTC(; name, m, radius, k, Ti, tau_max, v_fade, P_aux, ratio, dv_wheel, __overrides)
 
+
 The battery-electric planar car on WLTC: `Vehicle.Electric.ElectricDrive` turns the front axle
 through the planar `DifferentialGear`, and the bench meters every link of the energy chain.
 

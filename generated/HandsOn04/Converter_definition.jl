@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Converter(; name, I_max, d_max, T_i, V_on, f_s, t_sw, eps, __overrides)
 
+
 Hands-on 04 step 02: the average converter, one duty ratio between the DC link and the machine,
 with a current limit and a voltage limit.
 

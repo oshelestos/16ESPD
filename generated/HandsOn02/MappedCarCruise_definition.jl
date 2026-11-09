@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MappedCarCruise(; name, speed_kmh, pedal_cmd, rpm0, p_m0, __overrides)
 
+
 Hands-on 02 step 05 bench: the car started in steady cruise at one pedal.
 
 The defaults hold 90 km/h. The engine speed and the CVT ratio start where that pedal settles

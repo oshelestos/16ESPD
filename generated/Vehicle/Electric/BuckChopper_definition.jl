@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    BuckChopper(; name, f_s, t_sw, R_on, R_off, L, R_L, __overrides)
 
+
 Step-down (buck) chopper, switched: deck 7 slide 28. A `Switch` chops the input onto the switch
 node, a freewheeling diode carries the inductor current while the switch is off, and the
 inductor smooths the pulses into a current with a ripple.

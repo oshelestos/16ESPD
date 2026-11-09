@@ -222,6 +222,7 @@ export CruiseClimbTransient__System
   var"gradient"::Float64 = 0.1
   var"start_time"::Float64 = 30.0
   var"duration"::Float64 = 120.0
+  # 
   # Windup scenario: cruise at 130 km/h, meet a finite 10% climb, then watch the road flatten.
   # 
   # Drives `BackCalcCruiseLoop`'s controller with a constant setpoint and a `GradeProfile`

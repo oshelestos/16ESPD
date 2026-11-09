@@ -181,6 +181,7 @@ export InjectorPulseTransient__System
   var"dp_rail"::Float64 = 300000.0
   # Driver Zener clamp voltage
   var"V_clamp"::Float64 = 60.0
+  # 
   # One injection pulse: a battery drives a `FuelInjector` through a low-side driver for `t_pulse`
   # seconds, with the fuel rail 3 bar above the manifold.
   # 

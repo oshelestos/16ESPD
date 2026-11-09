@@ -169,6 +169,7 @@ export ThrottleSensorSweepTransient__System
   var"phi_to"::Float64 = 1.53589
   # Track 1 wiper contact resistance
   var"R_wiper1"::Float64 = 10.0
+  # 
   # The throttle position sensor's characteristic: the plate angle swept slowly past both stops while
   # the ECU reads both tracks.
   # 

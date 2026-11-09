@@ -5,6 +5,7 @@
 
 
 @doc Markdown.doc"""
+
 One end of a gas hose: absolute pressure across it, air mass flow through it.
 
 Connected ports share `p`, and their `mdot` sum to zero, so the air one end gives up is the air

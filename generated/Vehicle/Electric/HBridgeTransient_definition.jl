@@ -187,6 +187,7 @@ export HBridgeTransient__System
   var"R_load"::Float64 = 10.0
   # Load inductance
   var"L_load"::Float64 = 0.01
+  # 
   # Bench for the library `HBridge`, the circuit of deck 7 slides 30 and 31: the Leaf pack's 350 V
   # as a stiff DC link, the bridge, and an R-L load such as a motor winding. A sine reference of
   # amplitude `m` at `f_1` drives the bridge; the load current starts at zero and its offset decays

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SpeedLoadMap(; name, rpm_axis, kpa_axis, data, gain, __overrides)
 
+
 Two-dimensional engine map with SI inputs and an SI-scaled output.
 
 The table axes remain in rpm and kPa to match the source data. Inputs are clamped at the table

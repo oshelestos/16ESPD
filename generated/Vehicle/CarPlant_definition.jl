@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    CarPlant(; name, theta_e, T_max, m, CdA, __overrides)
 
+
 Longitudinal car plant (L0): torque command and road grade in, speed out.
 
 Chains the engine, driveline and body, and measures the body speed with a velocity sensor.

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    LoadedSlipWheel1D(; name, radius, sAdhesion, sSlide, mu_A, mu_S, v_eps, __overrides)
 
+
 One-dimensional tire contact whose normal load is a signal rather than a constant.
 
 Same slip definition, sign conventions and friction curve as `SlipWheel1D`. The normal load

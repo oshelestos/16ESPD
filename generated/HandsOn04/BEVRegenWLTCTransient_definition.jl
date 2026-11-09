@@ -176,6 +176,7 @@ export BEVRegenWLTCTransient__System
   var"P_charge"::Float64 = 80500.0
   var"v_fade"::Float64 = 10.0
   var"P_aux"::Float64 = 300.0
+  # 
   # Hands-on 04 step 05 WLTC bench: step 04's car with your `RegenBlend` in place of `TorqueSplit`.
   # The machine brakes first, within its limits; what it leaves goes to all four friction brakes. The
   # meters give the recovered share: `E_dc_in`, charged back into the battery terminals, per

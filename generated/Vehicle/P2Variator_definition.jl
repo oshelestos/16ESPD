@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    P2Variator(; name, speed_commanded, i_launch, i_overdrive, target_rpm_min, target_rpm_max, ratio_time, output_rpm_floor, ratio_initial, __overrides)
 
+
 Ideal continuously variable transmission with pedal- or speed-commanded scheduling.
 
 The ratio is total engine-side to wheel-side speed reduction. The selected schedule uses either

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    WheelSlipSensor(; name, radius, v_eps, __overrides)
 
+
 Ideal wheel-slip sensor using physical frame and spin-shaft ports.
 
 The planar velocity is resolved in the wheel frame, so `v_long` is along the wheel heading and

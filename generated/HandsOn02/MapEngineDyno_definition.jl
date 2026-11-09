@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    MapEngineDyno(; name, rpm, pedal_initial, pedal_final, t_step, p_m0, __overrides)
 
+
 Dynamometer bench for `MapEngine`: the shaft is held at a fixed speed and the pedal steps once.
 
 The defaults hold the 90 km/h cruise point and open the pedal a little, so the torque shows the

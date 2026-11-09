@@ -151,6 +151,7 @@ export P2OperatingLineWLTCTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
+  # 
   # Engine-only operating-line WLTC with pedal-based power demand and shaft-speed K0 lock-up.
   # The line target is floored above idle. Machine torque, losses and inertia are zero.
   var"model"::Union{Nothing, System} = VehicleSystemsComponents.HandsOn05.P2OperatingLineWLTC(; name=:P2OperatingLineWLTC)

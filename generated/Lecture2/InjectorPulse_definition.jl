@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    InjectorPulse(; name, U_batt, t_pulse, t_start, dp_rail, R_on, t_switch, V_clamp, __overrides)
 
+
 One injection pulse: a battery drives a `FuelInjector` through a low-side driver for `t_pulse`
 seconds, with the fuel rail 3 bar above the manifold.
 

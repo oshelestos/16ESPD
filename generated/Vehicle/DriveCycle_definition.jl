@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    DriveCycle(; name, file, dataset, __overrides)
 
+
 Vehicle-speed trace loaded from a two-column time-series CSV.
 
 The default is the WLTC class 3b trace. Linear interpolation follows the prescribed straight

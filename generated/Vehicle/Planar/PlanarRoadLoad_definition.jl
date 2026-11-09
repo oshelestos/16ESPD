@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PlanarRoadLoad(; name, m, CdA, rho, v_nominal, f_r, g, __overrides)
 
+
 Road load for a planar body, through the longitudinal `Vehicle.RoadLoad` law.
 
 `RoadLoad` acts on a translational flange. Here that flange is moved by a speed source at the

@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    SampledCruiseLoop(; name, theta_e, with_I, with_D, Ts, k, Ti, Td, Nd, Ni, T_max, y_max, y_min, wp, wd, m, CdA, m0, __overrides)
 
+
 Cruise loop with a discrete PID controller and explicit sample-and-hold interfaces.
 
 The reference and vehicle speed are sampled at period `Ts`. The discrete controller executes on

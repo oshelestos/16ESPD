@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PhaseABS(; name, a_minus, a_plus, lambda_1, k_dec, k_inc, v_min, T_latch, __overrides)
 
+
 Hands-on 03 step 04 wheel-speed-only ABS controller. It dumps allowed hydraulic pressure while
 the wheel decelerates past `a_minus` or slips past `lambda_1`, holds while the wheel spins back up
 past `a_plus`, and otherwise rebuilds pressure slowly from the held level.

@@ -12,8 +12,9 @@ accelerations, yaw angle and position, as plain signals for blocks that take `Re
 
 ## Connectors
 
- * `bus` - The receiving end of `CarBus`: the same signals, as inputs. A control unit or an unpack block
-(`BusMotion`, `BusSlip`, `BusSlipAngle`, `BusWheelSpeed`) listens on one of these. ([`CarBusIn`](@ref))
+ * `bus` - 
+The receiving end of `CarBus`: the same signals, as inputs. A control unit or an unpack block
+(`BusMotion`, `BusSlip`, `BusSlipAngle`, `BusWheelSpeed`) listens on one of these. ([`CarBusIn`](@ref))
  * `delta_sw` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
  * `r` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))
  * `vx` - This connector represents a real signal as an output from a component ([`RealOutput`](@ref))

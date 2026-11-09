@@ -163,6 +163,7 @@ export BatteryTransient__System
   var"I_load"::Float64 = 100.0
   # Battery series resistance
   var"R0"::Float64 = 0.1
+  # 
   # Constant-current discharge of the library `Battery`: open circuit for 60 s, then `I_load` drawn
   # for 30 minutes. With the Leaf defaults and 100 A the terminal voltage drops from 350 V to 340 V
   # when the load comes on, and SoC falls from 0.9 by 100 A x 1800 s / Q_nom = 0.4375 to 0.4625. A

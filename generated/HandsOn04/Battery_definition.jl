@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    Battery(; name, E, R0, Q_nom, SoC0, __overrides)
 
+
 Hands-on 04 step 03: the battery as an open-circuit voltage behind a resistance, its state of
 charge counted from the current.
 

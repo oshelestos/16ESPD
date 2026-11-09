@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ElectricDrive(; name, ratio, P_aux, __overrides)
 
+
 Hands-on 04 step 04: the drive. Battery, converter and machine from steps 1-3, the 12 V
 auxiliaries on the DC link, and the 8.193 reduction to the shaft that turns the differential.
 `tau_ref` is the machine torque asked for; the drive asks the converter for the current that

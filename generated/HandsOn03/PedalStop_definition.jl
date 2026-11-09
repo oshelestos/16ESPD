@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    PedalStop(; name, pedal, road_mu, __overrides)
 
+
 Hands-on 03 step 02 bench: pedal, booster, tandem master cylinder, two brake lines, and a
 hydraulically braked wheel stopping the hands-on vehicle body.
 

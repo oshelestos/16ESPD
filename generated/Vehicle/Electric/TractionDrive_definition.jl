@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    TractionDrive(; name, T_max, P_rated, w_base, V_design, size_scale, R, L, J, T_f, K_i, k_w, C, w_reg, ratio, d_max, T_i, V_on, f_s, t_sw, eps, __overrides)
 
+
 Traction drive on an external DC bus: the average converter, a DC-equivalent machine and the
 single-speed reduction of `ElectricDrive`, without its battery and auxiliaries, so that several
 sources and loads can share one bus at `p` and `n`.

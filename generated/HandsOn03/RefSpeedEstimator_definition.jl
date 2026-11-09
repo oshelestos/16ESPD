@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    RefSpeedEstimator(; name, radius, a_ref, v0, T_up, v_eps, T_f, __overrides)
 
+
 Hands-on 03 step 04: what an ECU reads from a wheel-speed sensor. The car's speed: while the
 wheel turns faster than the estimate, the estimate follows it within `T_up`; otherwise it falls
 at `a_ref`, the deceleration the controller assumes the car can reach. From it, the wheel's slip.

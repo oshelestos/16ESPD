@@ -7,6 +7,7 @@
 @doc Markdown.doc"""
    ThrottlePositionSensor(; name, V_ref, phi_span, R_track, R_end, R_wiper1, R_wiper2, R_in, __overrides)
 
+
 A dual-track throttle position sensor: two potentiometers on the throttle shaft, fed from the
 ECU's 5 V reference, read by the ECU as two voltages.
 
