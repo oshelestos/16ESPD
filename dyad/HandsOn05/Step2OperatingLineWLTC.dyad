@@ -34,7 +34,7 @@ test component Step2OperatingLineWLTC
   driver = BlockComponents.Continuous.LimPID(with_D = false, k = k, Ti = Ti, y_max = tau_max, y_min = -tau_brake) {^driver}
   no_ff = BlockComponents.Sources.Constant(k = 0.0) {^no_ff}
   kmh = VehicleSystemsComponents.Vehicle.ToKmPerHour() {^kmh}
-  powertrain = VehicleSystemsComponents.Vehicle.P2Powertrain(speed_commanded = false, position_start = 0.0, drive(P_aux = 0.0, T_f = 0.0, K_i = 0.0, k_w = 0.0, C = 0.0, J = 0.0)) {^powertrain}
+  powertrain = VehicleSystemsComponents.Vehicle.P2Powertrain(speed_commanded = true, position_start = 0.0, drive(P_aux = 0.0, T_f = 0.0, K_i = 0.0, k_w = 0.0, C = 0.0, J = 0.0)) {^powertrain}
   differential = MultibodyComponents.PlanarMechanics.DifferentialGear() {^differential}
   mount = RotationalComponents.Components.Fixed() {^mount}
   straight = RotationalComponents.Components.Fixed() {^straight}
@@ -66,6 +66,15 @@ relations
   connect(flat.y, roadload.grade)
   connect(car.chassis, roadload.chassis) {^id23}
   connect(powertrain.mdot_fuel, meter.mdot_fuel) {^id24}
+
+  # The pedal and torque inputs are not used in this control mode.
+  connect(unused_command.y, powertrain.cvt_pedal, powertrain.engine_torque_ref)
+  # Calculate the engine power requested by the driver.
+  line.P = powertrain.engine_pedal * P_peak
+  # Choose an efficient speed without dropping below the minimum.
+  N_target = max(line.N, N_locked)
+  # Send the target engine speed to the powertrain.
+  powertrain.N_ref = N_target
   meter.P_stored = powertrain.E * powertrain.i
   powertrain.engine_pedal = min(max(driver.y / tau_max, 0.0), 1.0)
   powertrain.engage = max(0.5 * (1 + tanh((powertrain.engine_speed * 30 / pi - engage_rpm) / engage_width_rpm)), 0.5 * (1 + tanh((powertrain.variator.w_a * 30 / pi - lock_rpm) / lock_width_rpm)))

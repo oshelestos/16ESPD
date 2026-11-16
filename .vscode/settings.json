@@ -12,6 +12,5 @@
   "dyad-studio.autoCompile": false,
   "julia.enableDynamicIndexing": false,
   "julia.maxConcurrentIndexingProcesses": 1,
-  "julia.enableWorkspaceEnvironmentResolution": false,
-  "julia.environmentPath": "${workspaceFolder}"
+  "julia.enableWorkspaceEnvironmentResolution": false
 }

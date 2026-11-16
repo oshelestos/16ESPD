@@ -151,7 +151,6 @@ export Step2OperatingLineWLTCTransient__System
   var"specialization"::SpecializationLevel.Type = SpecializationLevel.Despecialize()
   var"verbose"::DEVerbosity.Type = DEVerbosity.Standard()
   var"log_file"::String = ""
-  # 
   # Hands-on 05 step 2 starter: the operating-line fixture without its line, with the powertrain still
   # pedal-commanded. Placing OperatingLine as `line`, wiring the zero command to the two ignored
   # inputs, setting `speed_commanded = true` and adding the three line equations the guide lists

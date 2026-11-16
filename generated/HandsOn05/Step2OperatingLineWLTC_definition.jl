@@ -7,7 +7,6 @@
 @doc Markdown.doc"""
    Step2OperatingLineWLTC(; name, m, radius, k, Ti, tau_max, dv_wheel, engage_rpm, engage_width_rpm, tau_brake, brake_gain, lock_rpm, lock_width_rpm, P_peak, N_locked, __overrides)
 
-
 Hands-on 05 step 2 starter: the operating-line fixture without its line, with the powertrain still
 pedal-commanded. Placing OperatingLine as `line`, wiring the zero command to the two ignored
 inputs, setting `speed_commanded = true` and adding the three line equations the guide lists
@@ -166,7 +165,7 @@ completes it to Lecture5.P2OperatingLineWLTC.
   powertrain_dict["drive.C"] = ModelingToolkit.default_to_parentscope(0.0)
   powertrain_dict["drive.J"] = ModelingToolkit.default_to_parentscope(0.0)
   merge!(powertrain_dict, powertrain_overrides)
-  push!(__systems, @named powertrain = VehicleSystemsComponents.Vehicle.P2Powertrain(; speed_commanded=false, position_start=Float64(0.0), __overrides = powertrain_dict))
+  push!(__systems, @named powertrain = VehicleSystemsComponents.Vehicle.P2Powertrain(; speed_commanded=true, position_start=Float64(0.0), __overrides = powertrain_dict))
   # Subcomponent differential of type MultibodyComponents.PlanarMechanics.DifferentialGear
   differential_overrides = __pop_subcomponent_overrides!(__overrides, "differential")
   push!(__systems, @named differential = MultibodyComponents.PlanarMechanics.DifferentialGear(; __overrides = differential_overrides))
@@ -194,6 +193,9 @@ completes it to Lecture5.P2OperatingLineWLTC.
   # Subcomponent unused_command of type BlockComponents.Sources.Constant
   unused_command_overrides = __pop_subcomponent_overrides!(__overrides, "unused_command")
   push!(__systems, @named unused_command = BlockComponents.Sources.Constant(; k=Float64(0.0), __overrides = unused_command_overrides))
+  # Subcomponent line of type VehicleSystemsComponents.Vehicle.OperatingLine
+  line_overrides = __pop_subcomponent_overrides!(__overrides, "line")
+  push!(__systems, @named line = VehicleSystemsComponents.Vehicle.OperatingLine(; __overrides = line_overrides))
 
   ### Check there are no unmatched overrides
   isempty(__overrides) || throw(ArgumentError("overrides: [$(join(keys(__overrides), ", "))] don't match names found in model. These names may exist in the model but could have been conditionally excluded. Override keys are dotted paths as written in Dyad source (e.g. inner.rate)."))
@@ -224,6 +226,9 @@ completes it to Lecture5.P2OperatingLineWLTC.
   __assertions = []
 
   ### Equations
+  push!(__eqs, line.P ~ powertrain.engine_pedal * P_peak)
+  push!(__eqs, N_target ~ max(line.N, N_locked))
+  push!(__eqs, powertrain.N_ref ~ N_target)
   push!(__eqs, meter.P_stored ~ powertrain.E * powertrain.i)
   push!(__eqs, powertrain.engine_pedal ~ min(max(driver.y / tau_max, 0.0), 1.0))
   push!(__eqs, powertrain.engage ~ max(0.5 * (1 + tanh((powertrain.engine_speed * 30 / pi - engage_rpm) / engage_width_rpm)), 0.5 * (1 + tanh((powertrain.variator.w_a * 30 / pi - lock_rpm) / lock_width_rpm))))
@@ -245,6 +250,7 @@ completes it to Lecture5.P2OperatingLineWLTC.
   push!(__eqs, connect(flat.y, roadload.grade))
   push!(__eqs, connect(car.chassis, roadload.chassis))
   push!(__eqs, connect(powertrain.mdot_fuel, meter.mdot_fuel))
+  push!(__eqs, connect(unused_command.y, powertrain.cvt_pedal, powertrain.engine_torque_ref))
 
   # Return completely constructed System
   return System(__eqs, ModelingToolkit.t_nounits, __vars, __params; systems=__systems, initial_conditions=__initial_conditions, guesses=__guesses, name, initialization_eqs=__initialization_eqs, bindings=__bindings, assertions=__assertions)
